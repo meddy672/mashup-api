@@ -27,7 +27,7 @@ app = Flask(__name__)
 
 
 
-@app.route('/api/user', methods=['POST', 'GET'])
+@app.route('/api/user', methods=['POST'])
 def new_user():
     username = request.json.get('username')
     password = request.json.get('password')
